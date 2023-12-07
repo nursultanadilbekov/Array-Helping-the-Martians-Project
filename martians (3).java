@@ -20,6 +20,7 @@ public class Main {
             System.out.println("Attemps: " + attempts + " \nEnter the kilometer marks to check cargo location: ");
             int[] numbers = guessNumbers();
 
+            //This loop for check your guesses with the real locations of cargo.
             for(int i = 0; i < cargoLocations.length; i++) {
                 for(int j = 0; j < numbers.length; j++){
                     if(cargoLocations[i] == numbers[j]){
@@ -49,6 +50,7 @@ public class Main {
         }
 
     }
+    //This method for print 3 numbers of kilometer marks to check where they are.
     public static int[] guessNumbers(){
         Scanner scanner = new Scanner(System.in);
         int guess1 = scanner.nextInt();
